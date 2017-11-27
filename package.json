@@ -1,6 +1,6 @@
 {
   "name": "react-happy-place-canvas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creates a canvas on the page with Jared Tarbell's Happy Place running",
   "main": "build/index.js",
   "scripts": {
