@@ -8,12 +8,18 @@ import drawCanvas from './DrawCanvas';
 // from the given properties.
 const propsToConfig = {
 	friendCount: 'FRIEND_COUNT',
+	painterCount: 'PAINTER_COUNT',
+	color: 'COLOR',
+	friction: 'FRICTION'
 }
 
 export default class ConfettiCanvas extends Component {
 
 	static propTypes = {
-		friendCount: PropTypes.number
+		friendCount: PropTypes.number,
+		painterCount: PropTypes.number,
+		friction: PropTypes.number,
+		color: PropTypes.string
 	};
 
 	handleCanvas = (el) => {
@@ -22,6 +28,8 @@ export default class ConfettiCanvas extends Component {
 			window.removeEventListener('resize', window.resizeConfetti, false);
 			return;
 		}
+
+		console.log(this.getConfig());
 
 		drawCanvas(el, this.getConfig());
 	}

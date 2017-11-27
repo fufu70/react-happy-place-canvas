@@ -37,7 +37,7 @@ export default App;
 
 #### Color
 
-The root color of the friends and their 
+The root color of the friends and their painters. The painters are the lines attached to their position, drawing themselves on to the canvas.
 
 ```javascript
 const App = () => {
@@ -60,6 +60,36 @@ const App = () => {
   return (
     <HappyPlaceCanvas
       friendCount={70} />
+  );
+  ...
+};
+```
+
+#### Painter Count
+
+How many painters are associated with a friend. Adds more lines to a friend in a wider pattern.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <HappyPlaceCanvas
+      painterCount={3} />
+  );
+  ...
+};
+```
+
+#### Friction
+
+The multiplier over time applied to the speed of the friends. The lower the number the slower the friends will become.
+
+```javascript
+const App = () => {
+  ...
+  return (
+    <HappyPlaceCanvas
+      friction={0.3} />
   );
   ...
 };
