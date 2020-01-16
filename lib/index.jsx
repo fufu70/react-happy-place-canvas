@@ -13,7 +13,7 @@ const propsToConfig = {
 	friction: 'FRICTION'
 }
 
-export default class ConfettiCanvas extends Component {
+export default class HappyPlaceCanvas extends Component {
 
 	static propTypes = {
 		friendCount: PropTypes.number,
@@ -26,12 +26,13 @@ export default class ConfettiCanvas extends Component {
 
 		if (el === null) {
 			window.removeEventListener('resize', window.resizeConfetti, false);
+			if (this.canvasHappyPlace) {
+				this.canvasHappyPlace.stop();
+			}
 			return;
 		}
 
-		console.log(this.getConfig());
-
-		drawCanvas(el, this.getConfig());
+		this.canvasHappyPlace = drawCanvas(el, this.getConfig());
 	}
 
 	getConfig = () => {

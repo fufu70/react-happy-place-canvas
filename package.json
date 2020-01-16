@@ -1,6 +1,6 @@
 {
   "name": "react-happy-place-canvas",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creates a canvas on the page with Jared Tarbell's Happy Place running",
   "main": "build/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "place",
     "canvas"
   ],
-  "author": "Christian Micklisch <christian.micklisch@successwithsos.com> (https://github.com/fufu70/)",
+  "author": "Christian Micklisch <christian.micklisch@icloud.com> (https://github.com/fufu70/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fufu70/react-happy-place-canvas/issues"
@@ -50,7 +50,7 @@
     "polished": "^1.9.0",
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1",
+    "react-dom": "^16.12.0",
     "styled-components": "^2.2.3"
   },
   "dependencies": {
